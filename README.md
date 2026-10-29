@@ -10,7 +10,7 @@ Physical AI 応用1講座 最終課題。操縦者（キーボード操作また
 
 AI カメラの死角（近すぎて全身が映らない人など）は、近距離 LiDAR で補います。
 
-<!-- 提出時に YouTube の URL を記入: [デモ動画](https://youtu.be/xxxxxxxx) -->
+デモ動画: https://youtu.be/AzOB72UBW1w
 
 ![デモの 4 場面](docs/images/scenes.jpg)
 
