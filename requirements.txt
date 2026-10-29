@@ -1,0 +1,6 @@
+# .venv にインストールする Python パッケージ（scripts/setup_python_env.sh を参照）
+ultralytics==8.4.188   # YOLO11（推論のみ）
+# ROS 2 Jazzy (Ubuntu 24.04) のメッセージ型は NumPy 1.x でビルドされているため 2.x は不可
+numpy<2
+markdown               # tools/make_report_pdf.py（レポートの PDF 化）
+pytest                 # 単体テスト

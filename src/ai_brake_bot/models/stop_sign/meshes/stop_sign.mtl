@@ -1,0 +1,12 @@
+newmtl stop_face
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 10
+map_Kd stop_sign_texture.png
+
+newmtl sign_metal
+Ka 0.55 0.55 0.55
+Kd 0.6 0.6 0.6
+Ks 0.2 0.2 0.2
+Ns 20

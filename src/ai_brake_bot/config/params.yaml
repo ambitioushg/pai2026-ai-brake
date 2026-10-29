@@ -1,0 +1,43 @@
+# 全ノード共通
+/**:
+  ros__parameters:
+    corridor_half_width: 0.6     # [m] 走行レーンの半幅（車体半幅 0.18 m + 余裕）
+
+yolo_detector:
+  ros__parameters:
+    confidence: 0.25
+    image_size: 640
+    target_classes: ["person", "stop sign"]
+    camera_hfov: 1.5             # [rad] models/ai_brake_bot/model.sdf と合わせる
+    camera_height: 0.7           # [m]   同上
+    stop_sign_width: 0.6         # [m]   models/stop_sign の対辺距離
+
+safety_brake:
+  ros__parameters:
+    stop_distance: 1.5
+    release_margin: 0.3
+    slow_distance: 4.0
+    min_speed_ratio: 0.25
+    person_hold_time: 1.0
+    person_min_confidence: 0.35
+    sign_min_confidence: 0.6
+    sign_trigger_distance: 3.0
+    sign_confirm_frames: 2
+    sign_wait_time: 3.0
+    sign_ignore_time: 8.0
+    # use_lidar は起動引数 use_lidar:=true/false で切り替える
+    # （ここに書くと、ノード名指定の設定が優先されて起動引数が効かなくなるため書かない）
+    obstacle_stop_distance: 0.8
+    obstacle_half_width: 0.35
+    obstacle_hold_time: 0.5
+    detection_timeout: 1.0
+    scan_timeout: 1.0
+
+auto_driver:
+  ros__parameters:
+    goal_x: 40.0
+
+trial_monitor:
+  ros__parameters:
+    lane_person_x: 24.0          # worlds/town_road.sdf の lane_person と合わせる
+    robot_front_offset: 0.25
